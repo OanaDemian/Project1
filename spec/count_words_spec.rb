@@ -12,9 +12,17 @@ RSpec.describe "count_words method" do
         end
     end
 
+    context "when string consist of multiple spaces" do
+        it "fails" do
+            expect{ count_words("     ") }.to raise_error "Please enter some text!"
+        end
+    end
+
     context "when given something other than string" do
         it "fails" do
             expect{ count_words(12345) }.to raise_error "Incorrect input type: please enter text!"
         end
     end
+
+    
 end

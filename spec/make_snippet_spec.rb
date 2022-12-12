@@ -20,7 +20,7 @@ RSpec.describe "make_snippet" do
     result = make_snippet("one two three four")
     expect(result).to eq "one two three four"
   end
-
+  end 
   context "given a sentence of 5 words" do
     it "returns the 5 words" do
       result = make_snippet("one two three four five")
@@ -34,5 +34,4 @@ RSpec.describe "make_snippet" do
       expect(result).to eq "one two three four five..."
     end
   end
-end
 end
