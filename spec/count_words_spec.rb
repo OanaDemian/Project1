@@ -23,6 +23,4 @@ RSpec.describe "count_words method" do
             expect{ count_words(12345) }.to raise_error "Incorrect input type: please enter text!"
         end
     end
-
-    
 end
