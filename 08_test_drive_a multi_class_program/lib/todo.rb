@@ -9,6 +9,7 @@ class Todo
     # Returns the task as a string
     fail "Please add a todo task!" if @task ==" " || @task == ""
     fail "Please add a todo task in a text format!" unless @task.is_a?(String)
+    fail "Task text must be less than 256 characters!" unless @task.length <= 256
     @task
   end
 
