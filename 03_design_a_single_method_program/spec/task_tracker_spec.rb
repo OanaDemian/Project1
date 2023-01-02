@@ -46,8 +46,7 @@ RSpec.describe "TODO: take out the garbage" do
   context "when given only #TODO without text" do
     it "fails" do
       # result = task_tracker()
-      expect{task_tracker("#TODO")}.to raise_error 
-      "ERROR: you forgot to describe the task. Add text to describe task!"
+      expect{task_tracker("#TODO")}.to raise_error "ERROR: you forgot to describe the task. Add text to describe task!"
     end
   end
 end
